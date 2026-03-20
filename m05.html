@@ -1,1 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+/* 1. Element Selector (Global Reset) */
+body {
+    /* Primary font used in SSBU character names and menus */
+    font-family: "FOT-Rodin Pro UB", "RodinBokutohPro-EB", "Arial Narrow", sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    text-transform: uppercase; /* Most Smash UI text is capitalized */
+    font-weight: 900; /* Rodin UB is extremely bold */
+}
+
+
+/* 2. ID Selector */
+#page-title {
+    color: #e60012; /* Nintendo Red */
+    text-align: center;
+}
+
+/* 3. Class Selector */
+.feature-list {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* 4. Descendant Selector (1 of 3) */
+main section {
+    margin-bottom: 30px;
+    padding: 15px;
+}
+
+/* 5. Descendant Selector (2 of 3) */
+footer p {
+    font-size: 0.9rem;
+    display: inline;
+}
+
+/* 6. Descendant Selector (3 of 3) */
+nav a {
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+/* 7. Combinator (Child Selector) */
+header > nav {
+    border-bottom: 2px solid #333;
+    padding: 10px;
+}
+
+/* 8. Attribute Selector (Targeting Off-site Links) */
+a[href^="http"] {
+    color: #007bff;
+    text-decoration: underline dotted;
+}
+
+/* 9. Pseudo-class (:hover for all links) */
+a:hover {
+    filter: brightness(1.5);
+    background-color: #eee;
+}
+
+/* 10. Distinct Style for On-site Links */
+.site-link {
+    color: #222;
+    text-decoration: none;
+    padding: 5px;
+    border: 1px solid #333;
+}
+
+
+.feature-list li:nth-of-type(odd) {
+    background-color: #ffe6e6;
+}
+
+.feature-list li:nth-of-type(even) {
+    background-color: #fff;
+}
+
+
+footer a {
+    font-weight: bold !important;
+}
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Smash Bros. Ultimate</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1 id="page-title">Super Smash Bros. Ultimate</h1>
+        <nav>
+            <a href="about.html" class="site-link">About Me</a>
+            <a href="projects.html" class="site-link">Previous Work</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="game-background">
+            <h2>The Ultimate Crossover</h2>
+            <p>Super Smash Bros. Ultimate is the fifth installment in the iconic fighting franchise developed by Nintendo. It features every single playable character from the series' history, alongside several new additions. Players battle across various stages inspired by classic gaming worlds to knock their opponents off the screen. With over 80 fighters, it stands as one of the most comprehensive crossover events in gaming history.</p>
+        </section>
+
+        <section id="game-features">
+            <h2>Why It's a Masterpiece</h2>
+            <p>I love this game because it rewards both casual party play and high-level competitive mastery. The mechanics are easy to pick up but offer incredible depth for those willing to practice. Whether playing locally with friends or competing online, the variety of playstyles keeps the experience fresh.</p>
+            
+            <ul class="feature-list">
+                <li>Massive roster of 89 playable fighters.</li>
+                <li>Over 100 unique stages to battle on.</li>
+                <li>World of Light single-player campaign mode.</li>
+                <li>Support for 8-player local multiplayer mayhem.</li>
+                <li>Breathtaking soundtrack with over 800 tracks.</li>
+                <li>Advanced techniques like parrying and short-hopping.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Nintendo Enthusiast</p>
+        <a href="https://www.smashbros.com" target="_blank">Official Website</a>
+    </footer>
+
+</body>
+</html>
 
